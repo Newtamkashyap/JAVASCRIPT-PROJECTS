@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Demo</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-<!-- <style>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- <style>
 .color{
         background: blue;
     }
 </style> -->
 </head>
+
 <body class="container-fluid">
     <h2>javascript form input</h2>
 
-    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#register">Register product</button>
-<!-- <button class="color">register product</button> -->
-<!-- <button type="button" class="btn btn-primary">button</button> -->
-<div class="modal fade" id="Register">
-    <div class="modal-dailog">
-<div class="modal-content">
-<div class="modal-header">
-    <h3><span class="bi bi-car4"></span>Register product</h3>
-    <button class="btn-close" data-bs-dismiss="modal"></button>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Register">Register
+        product</button>
+    <!-- <button class="color">register product</button> -->
+    <!-- <button type="button" class="btn btn-primary">button</button> -->
+    <div class="modal fade" id="Register">
+        <div class="modal-dailog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><span class="bi bi-car4"></span>Register product</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
 
-</div>
-<div class="modal-body">
-    <dl>
-        <dt>product Name</dt>
-        <dd><input class="form control" type="text" id="name"></dd>
-        <dt>Price</dt>
-        <dd><input class="form-control" type="number" id="price"></dd>
-        <dt>city</dt>
-        <dd>
-            <select class="form-select">
-                <option>delhi</option>
-                <option>punjab</option>
-                <option>haryana</option>
-                <option>bangalore</option>
-                <option>bihar</option>
-            </select>
-        </dd>
-        <dt>stock</dt>
-        <dd class="form-switch">
-            <input class="form-check-input" id="stock" type="checkbox">available
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>product Name</dt>
+                        <dd><input class="form control" type="text" id="name"></dd>
+                        <dt>Price</dt>
+                        <dd><input class="form-control" type="number" id="price"></dd>
+                        <dt>city</dt>
+                        <dd>
+                            <select class="form-select">
+                                <option>delhi</option>
+                                <option>punjab</option>
+                                <option>haryana</option>
+                                <option>bangalore</option>
+                                <option>bihar</option>
+                            </select>
+                        </dd>
+                        <dt>stock</dt>
+                        <dd class="form-switch">
+                            <input class="form-check-input" id="stock" type="checkbox">available
 
-        </dd>
-        <dt>manufacture</dt>
-      
-        <dd>
-            <input class="form-control" type="date" id="manufacture">
-        </dd>
-    </dl>
+                        </dd>
+                        <dt>manufacture</dt>
 
-</div>
-<div class="modal-footer">
-    <button class="btn btn-success">Register</button>
-    <button class="btn btn-danger" data-bs-dismiss="modal">cancel</button>
-</div>
+                        <dd>
+                            <input class="form-control" type="date" id="manufacture">
+                        </dd>
+                    </dl>
 
-</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success">Register</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">cancel</button>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-</div>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    
+    <div id="detailscontainer">
+        <h3>product details</h3>
+        <dl>
+            <dt>name </dt>
+            <dd id="lblname"></dd>
+            <dt>price </dt>
+            <dd id="lblprice"></dd>
+            <dt>city</dt>
+            </dt>
+            <dd id="lblcity"></dd>
+            <dt>stock </dt>
+            <dd id="lblstock"></dd>
+            <dt>manufacture</dt>
+            <dd id="lblmanufacture"></dd>
+
+        </dl>
+
+    </div>
+    <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
