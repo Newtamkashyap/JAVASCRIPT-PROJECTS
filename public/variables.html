@@ -1,17 +1,70 @@
 <script>
-    "use strict"
-    var a=20;
-    let b=12;
-    const c=50;
-    function f1()
+ "use strict"      //here we are using "using strict" keyword to striict the javascipt code.
+    var a=20;      //global variable we can access anywhere in any function.
+    let b=12;      //global variable we can access anywhere in any function.
+    const c=50;    //global variable we can access anywhere in any function.
+    let w=100;     //global variable we can access anywhere in any function.
+    let p=200;     //global variable we can access anywhere in any function.
+    function f1()  //global variable we can access anywhere in any function.
     {
-        document.write("function 1 <br>a ="+ a, " <br>b =" + b + "<br> c="+c +"<br>");
-    }
+     
+     window.x=100;  //This is also global variable by using window.we can access this variable any where
     
-    function f2(){
-        document.write("function 2 <br>a ="+ a ," <br>b =" + b + "<br> c="+c +"<br>");
+        document.write("x =" +x +"<br>");
     }
+   
+    function f2(){
+        
+        document.write("function 2 <br>a ="+ a ," <br>b =" + b + "<br> c="+c +"<br> w=" + w+ "<br> p=" + p + "<br>  x=" + x + "<br> ");
+       
+    }
+
     
     f1();
     f2();
+//var r,s,t is also valid
+var R,S=399,T;   //here we are declarging multiple variable in a single line or keyword reference.
+     R=23;
+     S=34;      //shadowing-here s valuse will be update from 399 to 34 so result will come s=34
+     T=45;
+     document.write("<br>R="+R ,"<br>S="+S ,"<br>T="+T)
+
+
+const X=12,y=10,
+z=50;//valid for const only....... bcj it allows only intilizing.
+
+document.write("<br>X="+X ,"<br>y="+y ,"<br>z="+z)
+
+
+var l=10, n,m;
+n=11;        // valid becj it allows declare,intilized,assinging and also same for "let"
+m=30;
+document.write("<br>l="+l ,"<br>m="+m ,"<br>n="+n)
+
+const L=111,M=121,o=100;
+//valid
+document.write("<br>L="+L ,"<br>m="+m ,"<br>o="+o)
+
+let g;                //undefined
+let h=g;             //undefined
+document.write("<br>g="+g ,"<br>h="+h)
+
+
+//var[A,B,C]=10;//not iterable--means "10" is not a collection of value so we have to write in a iteration way like ,
+//document.write("<br>A="+A ,"<br>B="+B ,"<br>C="+C)
+
+var[A,B,C]=[10];// here B and C is undefined.it is not good.
+document.write("<br>A="+A ,"<br>B="+B ,"<br>C="+C)
+
+//let[A,B,C]=[10];not valid for "let and const"
+//document.write("<br>A="+A ,"<br>B="+B ,"<br>C="+C)
+
+var[A,B,C]=[10,20,30];// valid becj here is iteration(in programming language it is called enumeration "enum"-enum is a collection of constants.)
+document.write("<br>A="+A ,"<br>B="+B ,"<br>C="+C)
+
+var[A,B,C]=[10,20,30];// valid becj here is iteration(in programming language it is called enumeration "enum"-enum is a collection of constants.)
+document.write("<br>A="+A ,"<br>B="+B ,"<br>C="+C)
+  
+
+
 </script>
