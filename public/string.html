@@ -1,0 +1,18 @@
+<script>
+    var username=prompt("Enter Name");
+    var age=parseInt(prompt("enter age"));
+    var msg1="hello !"+" "+ username +" "+"you will be "+(age+1)+"next year <br>";
+    //here we can do with both method either with single/doble quotes or backstrik 
+    var msg2=`Hello ! ${username} you will be${age+1} next year.<br>`;//here we are using binding expression to bind all the string .with backtick 
+    //and $ to make easy and for no confusion 
+    //otherwise we have to write again and again doubl/single quotes
+    // and plus that will be too long and create confusion so its better to use backtick{``}
+    // and curly braces{} not small bracket. 
+let msg3='Hello ! ${username} you will be${age+1} next year.<br>';//this is not valis becj binding expression is only for backtick.
+    document.write(msg1);
+    document.write(msg2);
+    document.write(msg3);
+
+    
+    
+</script>

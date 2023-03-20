@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaCharacter</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function submitclick() {
+            var test = document.getElementById("test").value;
+            if (test.match(/.o./)) {
+                document.write(`you entered:${test}`);
+
+            }
+            else {
+                alert('invalid');
+            }
+        }
+        function color() {
+            var testing = document.getElementById("testing").value;
+            if (testing.match(/green|red|blue/)) {     //here we can define multiple choice
+                document.write(`you entered:${testing}`);
+
+            }
+            else {
+                alert('invalid...only RBG allowed');
+            }
+        }
+       
+        function f3() {
+            var x = document.getElementById("x").value;
+            if (x.match(/\d\d/)) {    //one '\d'allow single digits 
+                document.write(`you entered:${x}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
+
+        function f4() {
+            var y = document.getElementById("y").value;
+            if (y.match(/\^\d\d\$/)) {    //this power expressiona nd dolar it restrict the digit 
+                //^ :-means start with
+                //$ :-means ends with            
+                 document.write(`you entered:${y}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
+        
+        function f5() {
+            var z = document.getElementById("z").value;
+            if (z.match(/\D/)) {  //it should be start with only non-mumeric(uppercase,lowercase) and any special character
+                    
+                 document.write(`you entered:${z}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
+        //function f5() {
+          //  var z = document.getElementById("z").value;
+            //if (z.match(/\D\d/)) {  //it should be start with only non-mumeric(uppercase,lowercase) and any special character
+                    
+              //   document.write(`you entered:${z}`);
+
+            //}
+            //else {
+              //  alert('invalid....');
+            //}
+        //}
+        function f6() {
+            var A = document.getElementById("A").value;
+            if (A.match(/\w/)) {  //it should be start with any [A-Z,a-z,0-9,_underscore] non-mumeric(uppercase,lowercase) and any special character
+                    
+                 document.write(`you entered:${A}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label>Your string:</label>
+    <input type="text" id="test">
+    <button class="btn btn-primary" type="submit" onclick="submitclick()">Button</button><br>
+    <label>Your string should be:</label>
+    <input type="text" id="testing">
+    <button class="btn btn-danger" type="submit" onclick="color()">Button</button><br>
+    <label> your strings:</label>
+    <input type="text" id="x">
+    <button class="btn btn-secondary" type="submit" onclick="f3()">button</button><br>
+     your strings should be:
+    <input type="text" id="y">
+    <button class="btn btn-success" type="submit" onclick="f4()">button</button><br>
+    your strings should be:
+    <input type="text" id="z">
+    <button class="btn btn-primary" type="submit" onclick="f5()">button</button><br>
+    your strings should be:
+    <input type="text" id="A">
+    <button class="btn btn-secondary" type="submit" onclick="f6()">button</button>
+</body>
+
+</html>

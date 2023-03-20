@@ -22,10 +22,30 @@
            
         }
     </script>
+    <style>
+        .text{
+            width: 300px;
+            border: 15px solid rgb(97, 99, 97);
+            padding: 50px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
 </head>
+<div class="text">
+    <body class="container-fluid" onload="bodyload()">
+        <h2>BMI Status</h2>
+        <label>metric units</label><br>
+        <label>Age</label><input size="2">age:2-120<br>
+        <label>Gender</label><input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female<br>
+        <label>Height</label><input size="10"><br>
+        <label>Weight</label><input size="10"><br>
+        <button type="button" class="btn btn-success">calculator</button>
+        <button type="button" class="btn btn-danger">clear</button><br>
+</div>
 
-<body class="container-fluid" onload="bodyload()">
-    <h2>BMI Status</h2>
     <div class="progress">
         <div class="progress-bar bg-danger me-1" style="width:400px">
             Underweight below 45 kg
@@ -46,6 +66,7 @@
             <div>You</div>
         </div>
     </div>
+    
 </body>
 
 </html>
