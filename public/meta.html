@@ -87,6 +87,50 @@
                 alert('invalid....');
             }
         }
+        function f7() {
+            var B = document.getElementById("B").value;
+            if (B.match(/\W/)) {  //only special character,non word chars
+                    
+                 document.write(`you entered:${B}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
+        function f8() {
+            var C = document.getElementById("C").value;
+            if (C.match(/\s/)) {  //refers to black space.
+                    
+                 document.write(`you entered:${C}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
+        function f9() {
+            var D = document.getElementById("D").value;
+            if (D.match(/\i/)) {  //it ignores case (not case sensitive)
+                    
+                 document.write(`you entered:${D}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
+        function f10() {
+            var E = document.getElementById("E").value;
+            if (E.match(/"\+91\d{10}/)) { 
+                    
+                 document.write(`you entered:${E}`);
+
+            }
+            else {
+                alert('invalid....');
+            }
+        }
     </script>
 </head>
 
@@ -108,7 +152,20 @@
     <button class="btn btn-primary" type="submit" onclick="f5()">button</button><br>
     your strings should be:
     <input type="text" id="A">
-    <button class="btn btn-secondary" type="submit" onclick="f6()">button</button>
+    <button class="btn btn-secondary" type="submit" onclick="f6()">button</button><br>
+    your strings should be:
+    <input type="text" id="B">
+    <button class="btn btn-danger" type="submit" onclick="f7()">button</button><br>
+    
+    <label>Your string:</label>
+    <input type="text" id="C">
+    <button class="btn btn-primary" type="submit" onclick="f8()">Button</button><br>
+    <label>Your string:</label>
+    <input type="text" id="D">
+    <button class="btn btn-success" type="submit" onclick="f9()">Button</button><br>
+    <label>Your string:</label>
+    <input type="text" id="E">
+    <button class="btn btn-secondary" type="submit" onclick="f10()">Button</button><br>
 </body>
 
 </html>
