@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<script>
+    var flag="";
+    function countrychange(){
+var countryName = document.getElementById("istcountry").value;
+var flag=document.getElementById("flag");
+var flag=document.getElementById("txtmobile");
+if(countryName=="India"){ 
+    txtmobile.placeholder="+91 and 10 digits";
+    flag.src="public/images/india.png";
+
+}
+else if(countryName=="US"){
+flag.src="public/images/US.png";
+txtmobile.placeholder="+(1)(425) 555-0100";
+}
+else if(countryName="UK"){
+    flag.src="public/images/UK.png";
+    txtmobile.placeholder="+(44)(20) 1234 5678";
+} 
+    }
+</script>
+</head>
+<body class="container-fluid">
+<h2>verify mobile</h2>
+ <dl class="w-25">
+    <dt>Your Country <dt>
+        <dd class="input-group">
+            <select id="istcountry" class="form-select" onchange="countrychanged()">
+                <option>Select country</option>
+                <option>India</option>
+                <option>US</option>
+                <option>UK</option>
+            </select>
+            <img width="80" height="40" id="flag" boarder="1" class="input-group-text">
+        </dd>
+    <dt>your mobile</dt>
+    <dd>
+        <input type="text" class="form-cotrol" id="txtmobile">
+    </dd>
+ </dl>
+ <button class="btn btn-primary">Register</button>   
+</body>
+</html>
