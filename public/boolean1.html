@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function StockChange(){
+        var stockCheckBox = document.getElementById("stock");
+        var lblStock = document.getElementById("lblstock");
+        lblStock.innerHtml = (stockCheckBox.Checked)?"Available":"Out of stock";
+    }
+</script>
+</head>
+<body>
+    <input type="checkbox" onchange="StockChange()" id="stock"> <span id="lblStock">Out of stock</span>
+</body>
+</html>
